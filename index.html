@@ -53,34 +53,46 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
           id="mainMenu"
           class="collapse navbar-collapse"
         >
-          <ul class="navbar-nav ms-auto">
-            <li>
+          <ul
+            class="navbar-nav ms-auto"
+            style="font-size: 1rem; letter-spacing: 0.05rem"
+          >
+            <li
+              class="nav-item"
+              style="margin-right: 20px"
+            >
               <a
                 href="#slider"
                 class="nav-link"
                 >Home</a
               >
             </li>
-            <li>
+            <li
+              class="nav-item"
+              style="margin-right: 20px"
+            >
               <a
                 href="#about"
                 class="nav-link"
                 >About</a
               >
             </li>
-            <li>
+            <li
+              class="nav-item"
+              style="margin-right: 20px"
+            >
               <a
                 href="#work"
                 class="nav-link"
                 >Work</a
               >
             </li>
-
-            <li class="dropdown">
+            <li class="nav-item dropdown">
               <a
                 href="#"
                 class="nav-link dropdown-toggle"
@@ -119,14 +131,17 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li
+              class="nav-item"
+              style="margin-right: 20px"
+            >
               <a
                 href="events.html"
                 class="nav-link"
                 >Events</a
               >
             </li>
-            <li>
+            <li class="nav-item">
               <a
                 href="#contact"
                 class="nav-link"
@@ -187,37 +202,63 @@
     </section>
 
     <!-- #############################      About       #######################################-->
-
     <section
       id="about"
       class="pt-md-3 pt-3"
     >
       <div class="container">
         <div class="row">
-          <div class="col-md-6 align-self-center">
-            <h2>About Us</h2>
-            <h6>What We Do?</h6>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              nostrum exercitationem architecto, fugit pariatur enim soluta!
-              Tenetur, facilis accusantium! Praesentium minus nobis
-              exercitationem illum voluptatum dolores molestiae vero! Quos
-              excepturi recusandae minima quia corporis aut deleniti labore,
-              harum provident omnis, est possimus vero porro neque consectetur
-              ullam sequi illo quis! Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Consectetur obcaecati neque, hic possimus
-              dignissimos sint.
-            </p>
-            <a
-              href="#"
-              class="btn btn-info"
-              >Learn More</a
-            >
+          <div class="col-md-6 d-flex flex-column justify-content-between">
+            <div>
+              <h2 style="font-size: 2.5em; margin-bottom: 0.5em">About Us</h2>
+              <!-- Increased font size and added bottom margin -->
+              <h6 style="font-size: 1.2em; margin-bottom: 0.5em">
+                What We Do?
+              </h6>
+              <!-- Increased font size and added bottom margin -->
+              <p style="font-size: 1em; line-height: 1.6; margin-bottom: 1em">
+                At Kode Resto, we bring a world of flavors to your table. Our
+                journey began with a passion for exceptional culinary
+                experiences, blending traditional and contemporary tastes. We
+                specialize in an array of cuisines, including our unique
+                KodeResto Specialty dishes, authentic Korean flavors, classic
+                Filipino favorites, and familiar American staples. Whether it's
+                a cozy family gathering, a professional corporate event, or a
+                festive celebration, our team is committed to making every meal
+                memorable with our diverse menu options.
+              </p>
+              <p style="font-size: 1em; line-height: 1.6">
+                We pride ourselves on our ability to cater to every palate,
+                ensuring each dish is crafted with the highest quality
+                ingredients and utmost care. Our chefs are connoisseurs of
+                flavor, constantly innovating and experimenting to bring you the
+                best of global cuisine. At Kode Resto, we don't just serve food;
+                we create an experience that celebrates the joy of eating. Join
+                us and embark on a culinary journey that tantalizes your taste
+                buds and leaves you longing for more.
+              </p>
+            </div>
+            <div style="text-align: center; padding-top: 1em">
+              <a
+                href="#"
+                class="btn btn-info"
+                style="font-size: 1.1em; padding: 0.5em 1em"
+                >Learn More</a
+              >
+              <!-- Increased font size and padding for the button -->
+            </div>
           </div>
           <div class="col-md-6 align-self-center">
             <img
               src="./img/about.jpg"
               alt="About Image"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              "
+              onmouseover="this.style.opacity=0.8"
+              onmouseout="this.style.opacity=1"
             />
           </div>
         </div>
@@ -235,75 +276,78 @@
           <div class="text-center">
             <h2>How We Work</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
-              quibusdam?
+              Discover the art of our culinary expertise, from the presentation
+              to the taste.
             </p>
           </div>
         </div>
 
-        <!-- Para sa Cards -->
+        <!-- Cards Section -->
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
+          <!-- 1st card: Buffet Table -->
+          <div class="col-md-4 d-flex">
+            <div class="card flex-fill">
               <img
                 src="./img/work1.jpg"
-                alt="Work1"
+                alt="Buffet Table"
                 class="card-img-top"
               />
-              <div class="card-body">
-                <h4 class="card-title">This is card title</h4>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Omnis tempora sequi mollitia illo ut nihil!
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Exquisite Buffet Spread</h4>
+                <p class="card-text flex-grow-1">
+                  Explore our lavish buffet tables, a feast for both the eyes
+                  and palate, featuring a variety of international cuisines.
                 </p>
                 <a
                   href="#"
-                  class="btn btn-info"
-                  >Learn More</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- 2nd card -->
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="./img/work2.jpg"
-                alt="Work1"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h4 class="card-title">This is card title</h4>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Omnis tempora sequi mollitia illo ut nihil!
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-info"
+                  class="btn btn-info mt-2 align-self-start"
                   >Learn More</a
                 >
               </div>
             </div>
           </div>
 
-          <!-- 3rd card -->
-          <div class="col-md-4">
-            <div class="card">
+          <!-- 2nd card: Dining Table -->
+          <div class="col-md-4 d-flex">
+            <div class="card flex-fill">
               <img
-                src="./img/work3.jpg"
-                alt="Work1"
+                src="./img/work2.jpg"
+                alt="Dining Table"
                 class="card-img-top"
               />
-              <div class="card-body">
-                <h4 class="card-title">This is card title</h4>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Omnis tempora sequi mollitia illo ut nihil!
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Elegant Dining Experience</h4>
+                <p class="card-text flex-grow-1">
+                  Indulge in our elegantly set dining tables, perfect for
+                  intimate gatherings and special occasions.
                 </p>
                 <a
                   href="#"
-                  class="btn btn-info"
+                  class="btn btn-info mt-2 align-self-start"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd card: Chef Preparing Food -->
+          <div class="col-md-4 d-flex">
+            <div class="card flex-fill">
+              <img
+                src="./img/work3.jpg"
+                alt="Chef Preparing Food"
+                class="card-img-top"
+              />
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Chef's Signature Dishes</h4>
+                <p class="card-text flex-grow-1">
+                  Witness culinary excellence as our chefs craft signature
+                  dishes with precision and flair, ensuring a remarkable dining
+                  experience.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-info mt-2 align-self-start"
                   >Learn More</a
                 >
               </div>
